@@ -1,0 +1,57 @@
+body {
+	background-color: rgba(0, 0, 0, 0.8); /* Optional: Replace red with semi-transparent black */
+	color: rgb(255, 255, 255);
+	position: relative;
+	z-index: 0;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("/images/bak.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.3; /* Controls image transparency */
+	z-index: -1;
+}
+
+
+
+#main-content {
+	min-height: 500px;
+	margin-top: 50px;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.table th, td {
+	text-align: center;
+}
+
+.field-error {
+	border-color: #FF0000;
+	margin-bottom: 10px;
+}
+
+.fa-bigger {
+	font-size: 1.5em;
+}
+
+.form-control {
+	color:black;
+}
+.bg-color {
+  background-color: #f8f9fa; /* Light background */
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: black !important;
+}
